@@ -1,3 +1,4 @@
+import './Entete.css';
 
 function Entete(props){
     return(

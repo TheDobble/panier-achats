@@ -1,0 +1,38 @@
+[
+    {
+        "id" : "prd00001",
+        "nom" : "H - Col rond",
+        "prix": 13.99
+    },
+
+    {
+        "id" : "prd00002",
+        "nom" : "H - Col V",
+        "prix": 10.99
+    },
+
+    {
+        "id" : "prd00003",
+        "nom" : "H - Manches longues",
+        "prix": 14.99
+    },
+
+    {
+        "id" : "prd00004",
+        "nom" : "F - Col rond",
+        "prix": 13.99
+    },
+
+    {
+        "id" : "prd00005",
+        "nom" : "F - Col V",
+        "prix": 10.99
+    },
+
+    {
+        "id" : "prd00006",
+        "nom" : "F - Manches longues",
+        "prix": 14.99
+    }
+
+]

@@ -1,5 +1,6 @@
 import Entete from './Entete'
 import Footer from './Footer'
+import ListeProduits from './ListeProduits'
 import './Page.css';
 
 
@@ -8,9 +9,9 @@ function Page() {
    <div className="Page">
         <Entete/>
       <section class="contenuPrincipal">
-        Le contenu principal
+        <ListeProduits/>
       </section>
-        <Footer/>
+        <Footer avecNom="Daniel Fiola"/>
    </div>
 
   );

@@ -1,8 +1,10 @@
+import './Footer.css';
 
 function Footer(props){
+    const annee = (new Date()).getFullYear();
     return(
         <footer>
-        &copy; Footer 2021
+        &copy; {annee} -Footer {props.avecNom}
       </footer>
     );
 }
