@@ -2,15 +2,21 @@ html {
     box-sizing: border-box;
 }
 
-*. *:before, *:after {
+*, *:before, *:after {
     box-sizing: inherit;
 }
 
 body {
     margin: 0;
+    font-family: "Roboto";
+    font-size : 18px;
 }
 
 #racine {
     width: 90%;
     
+}
+
+.cacher{
+    display: none;
 }

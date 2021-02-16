@@ -1,4 +1,4 @@
-import './ListeProduits.css'
+import './ListeProduits.scss'
 import Produit from './Produit'
 import tabProduits from './data/produits.json';
 
@@ -11,7 +11,12 @@ export default function ListeProduits(props) {
                     {
                        tabProduits.map((prd) =>
                        
-                        <Produit id={prd.id} nom={prd.nom} prix={prd.prix}/>
+                        <Produit 
+                                key={prd.id}
+                                id={prd.id} 
+                                nom={prd.nom} 
+                                prix={prd.prix} 
+                                etatPanier={props.etatPanier}/>
                        )
                     }
                  
