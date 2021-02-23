@@ -3,12 +3,13 @@ import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import Badge from '@material-ui/core/Badge'
 import SommairePanier from './SommairePanier';
 import { useState } from 'react';
+import { Link } from "react-router-dom";
 
 function Entete(props){
 
     const [etatCacherSP, setCacheSommaire] = useState(true);
     
-    const basculerSommairePanier = ()=>setCacheSommaire(etatCacherSP ? false:true);
+    const basculerSommairePanier = ()=> setCacheSommaire(!etatCacherSP);
 
     const [panier,setPanier] = props.etatPanier;
     console.log(panier)
@@ -17,11 +18,11 @@ function Entete(props){
 
         return(
         <header className="Entete">
-            <div>Logo</div>
+            <div><Link to="/">Logo</Link></div>
             <ul className="navPrincipale"> 
-                <li>Produits</li>
-                <li>A propos de nous</li>
-                <li>Contactez-Nous</li>
+                <li><Link to="/nos-produits">Produits</Link></li>
+                <li><Link to="/a-propos-de-magasin">A propos de nous</Link></li>
+                <li><Link to="/contact">Contactez-Nous</Link></li>
             </ul>
             <ul className="navUtil">
                 <li>

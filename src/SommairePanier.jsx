@@ -1,11 +1,10 @@
 import './SommairePanier.scss';
 
-export default function SommairePanier(props){
-    const [panier, setPanier] = props.etatPanier;
+export default function SommairePanier({etatPanier:[panier, setPanier],cacher}){
     const infoPanier = retournerInfoPanier(panier);
     return(
 
-        <div className= {'SommairePanier' + (props.cacher?' cacher':'')}>
+        <div className= {'SommairePanier' + (cacher?' cacher':'')}>
             <span className="nbArticles">Articles Différents: {infoPanier.nbArticles}</span>
             <span className="qteArticles">Articles total: {infoPanier.qteArticles}</span>
             <span className="sousTotal">Sous-Total: {infoPanier.sousTotal} </span>

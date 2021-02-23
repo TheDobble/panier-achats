@@ -13,10 +13,10 @@ export default function ListeProduits(props) {
                        
                         <Produit 
                                 key={prd.id}
+                                etatPanier={props.etatPanier}
                                 id={prd.id} 
                                 nom={prd.nom} 
-                                prix={prd.prix} 
-                                etatPanier={props.etatPanier}/>
+                                prix={prd.prix} />
                        )
                     }
                  
